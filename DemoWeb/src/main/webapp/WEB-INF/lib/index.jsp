@@ -38,13 +38,7 @@
 	<!-- Vùng chứa liên kết chuyển hướng và search -->
 	<nav class="navbar bg-dark navbar-dark navbar-expand-sm">
 	
-		<!-- Nút chỉ hiển thị khi màn hình thu nhỏ -->
-		<button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#account">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+		<h1>Đã sửa</h1>
 		
 		<!-- Vùng hiển thị khi nhấn nút data-bs-target="#mynavbar" -->
 		<div id="mynavbar" class="collapse navbar-collapse">
