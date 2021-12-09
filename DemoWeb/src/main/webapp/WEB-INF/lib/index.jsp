@@ -34,7 +34,7 @@
 			</nav>
 			
 		</div>
-		<h1>Quản lý bán sách</h1>
+		<h1>Quản lý bán sách(2)</h1>
 		<p>Thực tập chuyên ngành
 	</div>
 	
