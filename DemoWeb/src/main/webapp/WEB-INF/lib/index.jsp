@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!-- Vùng header của trang web -->
-	<div class="bg-success p-3 text-info text-center" id="area1">
+	<div class="bg-success text-info p-3 text-center" id="area1">
 		
 		<!-- Vùng đăng nhập tạo tài khoản -->
 		<div class="top d-flex flex-row-reverse">
@@ -79,7 +79,7 @@
 				<div class="row">
 					<div class="col-sm-4 col-4">
 						<div class="card">
-							<img class="card-img-top" alt="img book" src="media/content3.jpg">
+							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/sach.jpg">
 							<div class="card-body">
 							    <h6 class="card-title">Dậy thì mới kì làm sao</h6>
 							    <a href="#" class="btn btn-primary">Mua ngay</a>
