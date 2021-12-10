@@ -34,7 +34,7 @@
 			</nav>
 			
 		</div>
-		<h1>Quản lý bán sách(2)</h1>
+		<h1>Quản lý bán sách</h1>
 		<p>Thực tập chuyên ngành
 	</div>
 	
@@ -66,13 +66,79 @@
 		</div>
 	</nav>
 	
+	<!-- Vùng danh lục và nội dung trang web -->
 	<div class="container-fluid">
-		<div class="row bg-success">
+		<div class="row">
 			<div class="col-sm-4 bg-danger">
 				<h2>Danh mục sản phẩm</h2>
 			</div>
-			<div class="col-sm-8 bg-warning">
-				<h2>Hiện tại chưa có hàng</h2>
+			
+			<!-- Vùng nội dung trang web -->
+			<div class="col-sm-8">
+				<h3>Sách cho tuổi dạy thì</h3>
+				<div class="row">
+					<div class="col-sm-4 col-4">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="media/content3.jpg">
+							<div class="card-body">
+							    <h6 class="card-title">Dậy thì mới kì làm sao</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4 col-4 ">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="https://newshop.vn/public/uploads/products/44225/sach-day-thi-moi-ki-lam-sao_L.jpg">
+							<div class="card-body">
+							    <h6 class="card-title">Dậy thì mới kì làm sao</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4 col-4">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="https://newshop.vn/public/uploads/products/44225/sach-day-thi-moi-ki-lam-sao_L.jpg">
+							<div class="card-body">
+							    <h6 class="card-title">Dậy thì mới kì làm sao</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3>Sách cho doanh nhân</h3>
+				<div class="row">
+					<div class="col-sm-4 col-4">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="https://newshop.vn/public/uploads/products/44225/sach-day-thi-moi-ki-lam-sao_L.jpg">
+							<div class="card-body">
+							    <h6 class="card-title">Dậy thì mới kì làm sao</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4 col-4">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="https://newshop.vn/public/uploads/products/44225/sach-day-thi-moi-ki-lam-sao_L.jpg">
+							<div class="card-body">
+							    <h6 class="card-title">Dậy thì mới kì làm sao</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4 col-4">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="https://newshop.vn/public/uploads/products/44225/sach-day-thi-moi-ki-lam-sao_L.jpg">
+							<div class="card-body">
+							    <h6 class="card-title">Dậy thì mới kì làm sao</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
