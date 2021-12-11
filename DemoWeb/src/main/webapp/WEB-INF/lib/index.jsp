@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- Vùng header của trang web -->
-	<div class="bg-success text-info p-3 text-center" id="area1">
+	<div class="bg-success text-info p-1 text-center" id="area1">
 		
 		<!-- Vùng đăng nhập tạo tài khoản -->
 		<div class="top d-flex flex-row-reverse">
@@ -59,6 +59,7 @@
 				<li class="nav-item">
 					<a class="nav-link text-dark list-group-item-action px-2" href="#">Đơn hàng</a>
 				</li>
+				
 			</ul>
 			<form class="d-flex">
 				<input class="form-control me-2" type="text" placeholder="Search">
@@ -81,19 +82,77 @@
 	        			<a id="textbook" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Vật lý</a>
 	        			<a id="textbook" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Hóa</a>
 	        		</div>
-        			<a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#detective" data-bs-parent="#mylist">Tiểu thuyết</a>
+        			<a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#detective">Tiểu thuyết</a>
         			<div class="list-group mx-2">
-	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Toán</a>
-	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Tiếng Việt</a>
-	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Sinh học</a>
-	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Vật lý</a>
-	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Hóa</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Tác Phẩm Kinh Điển</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Truyện Ngôn Tình</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Hài Hước-Truyện Cười</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Light Novel</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Truyện Trinh Thám - Kiếm Hiệp</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Huyền Bí-Giả Tưởng - Kinh Dị</a>
 	        		</div>
-          			<a class="list-group-item list-group-item-action" href="#">Truyện tranh</a>
-        			<a class="list-group-item list-group-item-action" href="#">Thể loại khác</a>
+          			<a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#manga">Truyện tranh</a>
+          			<div class="list-group mx-2">
+	        			<a id="manga" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Manga</a>
+	        			<a id="manga" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Manhua</a>
+	        			<a id="manga" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Manhwa</a>
+	        			<a id="manga" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Thể Loại Phiêu Lưu</a>
+	        			<a id="manga" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Hài Hước-Lãng Mạn</a>
+	        		</div>
+        			<a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#different">Thể loại khác</a>
+        			<div class="list-group mx-2">
+        				<a id="different" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Tô Màu Dành Cho Người Lớn</a>
+	        			<a id="different" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Ảnh</a>
+	        			<a id="different" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">12 Cung Hoàng Đạo</a>
+	        			<a id="different" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Phóng Sự-Ký Sự-Phê Bình Văn Học</a>
+	        			<a id="different" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Khoa Học-Tự Nhiên</a>
+	        		</div>
+		      	</div>
+		      	<h3>Giá</h3>
+		      	<div class="list-group" id="money">
+		      		<ul>
+					<li>
+						<label>
+							<input type="radio" name="price-filter" data-price="0:50000" value="((price:product<50000))" />
+							<span>Nhỏ hơn 50,000₫</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="price-filter" data-price="50000:100000" value="((price:product>=50000)&&(price:product<100000))" />
+							<span>Từ 50,000₫ - 100,000₫</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="price-filter" data-price="100000:200000" value="((price:product>=100000)&&(price:product<200000))" />
+							<span>Từ 100,000₫ - 200,000₫</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="price-filter" data-price="200000:300000" value="((price:product>=200000)&&(price:product<300000))" />
+							<span>Từ 200,000₫ - 300,000₫</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="price-filter" data-price="300000:max" value="((price:product>=300000))" />
+							<span>Lớn hơn 300,000₫</span>
+						</label>
+					</li>
+					</ul>
+		      	</div>
+		      	<h3>NHÀ CUNG CẤP</h3>
+		      	<div class="list-group" id="provided">
+		      		<ul>
+		      			<li><input type="radio" name="price-filter" />...</li>
+		      			<li><input type="radio" name="price-filter" />...</li>
+		      			<li><input type="radio" name="price-filter" />...</li>
+		      		</ul>
 		      	</div>
 			</div>
-			
+		
 			<!-- Vùng nội dung trang web -->
 			<div class="col-sm-9 bg-info">
 				<h3>Sách cho tuổi dậy thì</h3>
@@ -130,9 +189,9 @@
 					
 					<div class="col-sm-3 col-6">
 						<div class="card">
-							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/Capture.PNG">
+							<img class="card-img-top" alt="img book" src="https://cdn0.fahasa.com/media/flashmagazine/images/page_images/cam_nang_tuoi_day_thi_danh_cho_ban_trai/2020_04_15_13_46_25_1-390x510.JPG">
 							<div class="card-body">
-							    <h6 class="card-title">Khi người ta lớn</h6>
+							    <h6 class="card-title">Cẩm Nang Dành Cho Bạn Trai</h6>
 							    <a href="#" class="btn btn-primary">Mua ngay</a>
 							</div>
 						</div>
@@ -172,9 +231,9 @@
 					
 					<div class="col-sm-3 col-6">
 						<div class="card">
-							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/DiemBungPhat.PNG">
+							<img class="card-img-top" alt="img book" src="https://bizweb.dktcdn.net/100/197/269/products/buoi-sang-dieu-ky-danh-cho-doanh-nhan-01.jpg?v=1561185263587">
 							<div class="card-body">
-							    <h6 class="card-title">Điểm bùng phát</h6>
+							    <h6 class="card-title">Buổi Sáng Diệu Kỳ</h6>
 							    <a href="#" class="btn btn-primary">Mua ngay</a>
 							</div>
 						</div>
