@@ -40,7 +40,7 @@
 	</div>
 	
 	<!-- Vùng chứa liên kết chuyển hướng và search -->
-	<nav class="navbar bg-dark navbar-dark navbar-expand-sm" id="area2">
+	<nav class="navbar bg-secondary navbar-dark navbar-expand-sm" id="area2">
 	
 		<!-- Nút chỉ hiển thị khi màn hình thu nhỏ -->
 		<button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -48,51 +48,57 @@
 		</button>
 		
 		<!-- Vùng hiển thị khi nhấn nút data-bs-target="#mynavbar" -->
-		<div id="mynavbar" class="collapse navbar-collapse" data-bs-parent="#area1">
-			<ul class="navbar-nav me-auto">
-				<li class="nav-item mx-2">
-					<a class="nav-link text-white" href="#">Trang chủ</a>
+		<div id="mynavbar" class="collapse navbar-collapse mx-2" data-bs-parent="#area1">
+			<ul class="navbar-nav list-group me-auto">
+				<li class="nav-item">
+					<a class="nav-link text-dark list-group-item-action px-2" href="#">Trang chủ</a>
 				</li>
-				<li class="nav-item mx-2">
-					<a class="nav-link text-white" href="#">Tin tức</a>
+				<li class="nav-item">
+					<a class="nav-link text-dark list-group-item-action px-2" href="#">Tin tức</a>
 				</li>
-				<li class="nav-item mx-2">
-					<a class="nav-link text-white" href="#">Đơn hàng</a>
+				<li class="nav-item">
+					<a class="nav-link text-dark list-group-item-action px-2" href="#">Đơn hàng</a>
 				</li>
 			</ul>
 			<form class="d-flex">
-				<input class="form-control ms-2 me-2" type="text" placeholder="Search">
-				<button class="btn btn-primary me-2" type="button">Search</button>
+				<input class="form-control me-2" type="text" placeholder="Search">
+				<button class="btn btn-primary" type="button">Search</button>
 			</form>
 		</div>
 	</nav>
 	
-	<!-- Vùng danh lục và nội dung trang web -->
+	<!-- Vùng danh mục và nội dung trang web -->
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-4 bg-danger">
-				<h2>Danh mục sản phẩm</h2>
-				<ul class="nav nav-pills flex-column">
-        		<li class="nav-item">
-          			<a class="nav-link" href="#">Sách giáo khoa</a>
-        		</li>
-        		<li class="nav-item">
-          			<a class="nav-link" href="#">Tiểu thuyết</a>
-        		</li>
-        		<li class="nav-item">
-          			<a class="nav-link" href="#">Truyện tranh</a>
-        		</li>
-        		<li class="nav-item">
-          			<a class="nav-link" href="#">Thể loại khác</a>
-        		</li>
-      </ul>
+			<div class="col-sm-3 bg-danger">
+				<h3>Danh mục sản phẩm</h3>
+				<div class="list-group" id="mylist">
+	        		<a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#textbook">Sách giáo khoa</a>
+	        		<div class="list-group mx-2">
+	        			<a id="textbook" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Toán</a>
+	        			<a id="textbook" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Tiếng Việt</a>
+	        			<a id="textbook" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Sinh học</a>
+	        			<a id="textbook" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Vật lý</a>
+	        			<a id="textbook" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Hóa</a>
+	        		</div>
+        			<a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#detective" data-bs-parent="#mylist">Tiểu thuyết</a>
+        			<div class="list-group mx-2">
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Toán</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Tiếng Việt</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Sinh học</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Vật lý</a>
+	        			<a id="detective" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Sách Hóa</a>
+	        		</div>
+          			<a class="list-group-item list-group-item-action" href="#">Truyện tranh</a>
+        			<a class="list-group-item list-group-item-action" href="#">Thể loại khác</a>
+		      	</div>
 			</div>
 			
 			<!-- Vùng nội dung trang web -->
-			<div class="col-sm-8">
+			<div class="col-sm-9 bg-info">
 				<h3>Sách cho tuổi dậy thì</h3>
 				<div class="row">
-					<div class="col-sm-4 col-4">
+					<div class="col-sm-3 col-6">
 						<div class="card">
 							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/sach.jpg">
 							<div class="card-body">
@@ -102,7 +108,7 @@
 						</div>
 					</div>
 					
-					<div class="col-sm-4 col-4 ">
+					<div class="col-sm-3 col-6">
 						<div class="card">
 							<img class="card-img-top" alt="img book" src="https://vnwriter.net/wp-content/uploads/2019/08/sach-cam-nang-con-gai-209x300.jpg">
 							<div class="card-body">
@@ -112,7 +118,17 @@
 						</div>
 					</div>
 					
-					<div class="col-sm-4 col-4">
+					<div class="col-sm-3 col-6">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/Capture.PNG">
+							<div class="card-body">
+							    <h6 class="card-title">Khi người ta lớn</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-3 col-6">
 						<div class="card">
 							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/Capture.PNG">
 							<div class="card-body">
@@ -124,7 +140,7 @@
 				</div>
 				<h3>Sách cho doanh nhân</h3>
 				<div class="row">
-					<div class="col-sm-4 col-4">
+					<div class="col-sm-3 col-6">
 						<div class="card">
 							<img class="card-img-top" alt="img book" src="https://downloadsach.com/wp-content/uploads/2017/07/sach-ky-nang-di-truoc-dam-me-189x300.jpg">
 							<div class="card-body">
@@ -134,7 +150,7 @@
 						</div>
 					</div>
 					
-					<div class="col-sm-4 col-4">
+					<div class="col-sm-3 col-6">
 						<div class="card">
 							<img class="card-img-top" alt="img book" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_EHNLICTwccNqKPBLVRQsRnweJ4UfERx-6oENOEVOjidSYxlQMAXrSP9lQt9t4_rDg&usqp=CAU">
 							<div class="card-body">
@@ -144,7 +160,17 @@
 						</div>
 					</div>
 					
-					<div class="col-sm-4 col-4">
+					<div class="col-sm-3 col-6">
+						<div class="card">
+							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/DiemBungPhat.PNG">
+							<div class="card-body">
+							    <h6 class="card-title">Điểm bùng phát</h6>
+							    <a href="#" class="btn btn-primary">Mua ngay</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-3 col-6">
 						<div class="card">
 							<img class="card-img-top" alt="img book" src="${pageContext.request.contextPath}/media/DiemBungPhat.PNG">
 							<div class="card-body">
