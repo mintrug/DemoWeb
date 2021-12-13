@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- Vùng header của trang web -->
-	<div class="bg-success text-info p-1 text-center" id="area1">
+	<div class="bg-success text-white p-1 text-center" id="area1">
 		
 		<!-- Vùng đăng nhập tạo tài khoản -->
 		<div class="top d-flex flex-row-reverse">
@@ -71,7 +71,7 @@
 	<!-- Vùng danh mục và nội dung trang web -->
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-3 bg-danger">
+			<div class="col-sm-3 p-5">
 				<h3>Danh mục sản phẩm</h3>
 				<div class="list-group" id="mylist">
 	        		<a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#textbook">Sách giáo khoa</a>
@@ -108,53 +108,52 @@
 	        			<a id="different" class="list-group-item list-group-item-action collapse" href="#" data-bs-parent="#mylist">Khoa Học-Tự Nhiên</a>
 	        		</div>
 		      	</div>
-		      	<h3>Giá</h3>
+		      	<h3 class="mt-5">Giá</h3>
 		      	<div class="list-group" id="money">
-		      		<ul>
-					<li>
-						<label>
-							<input type="radio" name="price-filter" data-price="0:50000" value="((price:product<50000))" />
-							<span>Nhỏ hơn 50,000₫</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="radio" name="price-filter" data-price="50000:100000" value="((price:product>=50000)&&(price:product<100000))" />
-							<span>Từ 50,000₫ - 100,000₫</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="radio" name="price-filter" data-price="100000:200000" value="((price:product>=100000)&&(price:product<200000))" />
-							<span>Từ 100,000₫ - 200,000₫</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="radio" name="price-filter" data-price="200000:300000" value="((price:product>=200000)&&(price:product<300000))" />
-							<span>Từ 200,000₫ - 300,000₫</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="radio" name="price-filter" data-price="300000:max" value="((price:product>=300000))" />
-							<span>Lớn hơn 300,000₫</span>
-						</label>
-					</li>
-					</ul>
+					<label>
+						<input type="radio" name="price-filter" data-price="0:50000" value="((price:product<50000))" />
+						<span>Nhỏ hơn 50,000₫</span>
+					</label>
+				
+					<label>
+						<input type="radio" name="price-filter" data-price="50000:100000" value="((price:product>=50000)&&(price:product<100000))" />
+						<span>Từ 50,000₫ - 100,000₫</span>
+					</label>
+				
+					<label>
+						<input type="radio" name="price-filter" data-price="100000:200000" value="((price:product>=100000)&&(price:product<200000))" />
+						<span>Từ 100,000₫ - 200,000₫</span>
+					</label>
+				
+					<label>
+						<input type="radio" name="price-filter" data-price="200000:300000" value="((price:product>=200000)&&(price:product<300000))" />
+						<span>Từ 200,000₫ - 300,000₫</span>
+					</label>
+				
+					<label>
+						<input type="radio" name="price-filter" data-price="300000:max" value="((price:product>=300000))" />
+						<span>Lớn hơn 300,000₫</span>
+					</label>
 		      	</div>
-		      	<h3>NHÀ CUNG CẤP</h3>
+		      	<h3 class="mt-5">NHÀ CUNG CẤP</h3>
 		      	<div class="list-group" id="provided">
-		      		<ul>
-		      			<li><input type="radio" name="price-filter" />...</li>
-		      			<li><input type="radio" name="price-filter" />...</li>
-		      			<li><input type="radio" name="price-filter" />...</li>
-		      		</ul>
+		      		<label>
+		      			<input type="radio" name="price-filter" />
+	      				<span>...</span>
+		      		</label>
+		      		<label>
+		      			<input type="radio" name="price-filter" />
+	      				<span>...</span>
+		      		</label>
+		      		<label>
+		      			<input type="radio" name="price-filter" />
+	      				<span>...</span>
+		      		</label>
 		      	</div>
 			</div>
 		
 			<!-- Vùng nội dung trang web -->
-			<div class="col-sm-9 bg-info">
+			<div class="col-sm-9 p-5">
 				<h3>Sách cho tuổi dậy thì</h3>
 				<div class="row">
 					<div class="col-sm-3 col-6">
@@ -197,7 +196,7 @@
 						</div>
 					</div>
 				</div>
-				<h3>Sách cho doanh nhân</h3>
+				<h3 class="mt-5">Sách cho doanh nhân</h3>
 				<div class="row">
 					<div class="col-sm-3 col-6">
 						<div class="card">
@@ -243,7 +242,7 @@
 		</div>
 	</div>
 	
-	<div class="bg-dark text-white text-center">
+	<div class="bg-success text-white text-center">
 		<h3>Copy right</h3>
 	</div>
 </body>
