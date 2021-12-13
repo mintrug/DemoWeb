@@ -13,7 +13,16 @@
 <body>
 	<!-- Vùng header của trang web -->
 	<div class="bg-success text-white p-1 text-center" id="area1">
-		
+	
+		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-8">
+			<!--logo-->
+				<div class="pull-left">
+					<a href="/" class="logo" title="NTU shop">
+						<img src="${pageContext.request.contextPath}/media/LOGO.PNG" alt="NTU shop" title="NTU shop"/>
+						</a>
+				</div>
+			<!-- end logo -->
+		</div>
 		<!-- Vùng đăng nhập tạo tài khoản -->
 		<div class="top d-flex flex-row-reverse">
 			<nav class="navbar navbar-expand-sm navbar-dark flex-row-reverse">
@@ -36,7 +45,7 @@
 			
 		</div>
 		<h1>Quản lý bán sách</h1>
-		<p>Thực tập chuyên ngành
+		<p>Thực tập chuyên ngành</p>
 	</div>
 	
 	<!-- Vùng chứa liên kết chuyển hướng và search -->
