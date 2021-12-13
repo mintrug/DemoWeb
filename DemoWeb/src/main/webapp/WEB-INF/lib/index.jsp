@@ -135,19 +135,19 @@
 						<span>Lớn hơn 300,000₫</span>
 					</label>
 		      	</div>
-		      	<h3 class="mt-5">NHÀ CUNG CẤP</h3>
+		      	<h3 class="mt-5">NHÀ XUẤT BẢN</h3>
 		      	<div class="list-group" id="provided">
 		      		<label>
 		      			<input type="radio" name="price-filter" />
-	      				<span>...</span>
+	      				<span>NXB Kim Đồng</span>
 		      		</label>
 		      		<label>
 		      			<input type="radio" name="price-filter" />
-	      				<span>...</span>
+	      				<span>NXB Thế giới</span>
 		      		</label>
 		      		<label>
 		      			<input type="radio" name="price-filter" />
-	      				<span>...</span>
+	      				<span>NXB Đà Nẵng</span>
 		      		</label>
 		      	</div>
 			</div>
