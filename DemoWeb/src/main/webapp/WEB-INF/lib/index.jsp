@@ -17,9 +17,9 @@
 		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-8">
 			<!--logo-->
 				<div class="pull-left">
-					<a href="/" class="logo" title="NTU shop">
+					<a href="#" class="logo" title="NTU shop">
 						<img src="${pageContext.request.contextPath}/media/LOGO.PNG" alt="NTU shop" title="NTU shop"/>
-						</a>
+					</a>
 				</div>
 			<!-- end logo -->
 		</div>
